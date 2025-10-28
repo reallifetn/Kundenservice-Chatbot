@@ -1,11 +1,4 @@
-Schlüsselwort;Antwort
-hallo;Hallo! Schön, dass du da bist.
-wie geht es dir;Mir geht's gut! Und dir?
-name;Ich bin ein Lern-Chatbot. Und wie heißt du?
-danke;Gern geschehen!
-ich habe hunger;Dann iss halt was
-sehr gut;Danke das ich von dir Lernen kann!
-dann iss halt was;wasa hast du bereit gelernt?
-wsa;exit
-wie heiße ich?;DU bist mein Entwickler
-pip install flask;exit
+Hallo! Wie kann ich dir helfen?
+Natürlich, ich erkläre es dir.
+Ich bin mir nicht sicher, was du meinst.
+Danke für deine Nachricht!
