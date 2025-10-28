@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Kundenservice Chatbot</title>
+</head>
+<body>
+<h1>Kundenservice Chatbot</h1>
+<input type="text" id="userInput" placeholder="Schreibe hier..." />
+<button onclick="senden()">Senden</button>
+<p id="botAntwort"></p>
+
+<script>
+async function senden() {
+    const message = document.getElementById("userInput").value;
+    const response = await fetch("https://DEIN-BOT-URL.onrender.com/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: message })
+    });
+    const data = await response.json();
+    document.getElementById("botAntwort").innerText = "Bot: " + data.reply;
+}
+</script>
+</body>
+</html>
